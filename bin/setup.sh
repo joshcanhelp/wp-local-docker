@@ -13,8 +13,7 @@ docker exec -u www-data wplocaldocker_php-apache_1 wp core install \
     --url=http://localhost \
     --title="Auth0 ♥ Docker" \
     --admin_user=josh.cunningham@auth0.com \
-    --admin_email=josh.cunningham@auth0.com \
-    --admin_password="j2EwNZ{>goUN9aqFMirj"
+    --admin_email=josh.cunningham@auth0.com
 docker exec -u www-data wplocaldocker_php-apache_1 wp plugin install auth0
 docker exec -u www-data wplocaldocker_php-apache_1 wp plugin activate auth0
 docker-compose stop
